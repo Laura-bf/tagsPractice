@@ -6,7 +6,7 @@
   <short-name>datos</short-name>
   <tag>
     <name>conexion</name>
-    <tag-class>curso.cap.tagsPractice.ConexionBodyTag</tag-class>
+    <tag-class>curso.cap.tagsPractice.tags.ConexionBodyTag</tag-class>
     <attribute>
     	<name>driver</name>
     	<required>true</required>
@@ -30,7 +30,7 @@
   </tag>
   <tag>
     <name>resultado</name>
-    <tag-class>curso.cap.tagsPractice.ResultadoBodyTag</tag-class>
+    <tag-class>curso.cap.tagsPractice.tags.ResultadoBodyTag</tag-class>
     <attribute>
     	<name>sql</name>
     	<required>true</required>
@@ -39,7 +39,7 @@
   </tag>
   <tag>
     <name>valor</name>
-    <tag-class>curso.cap.tagsPractice.ValorTag</tag-class>
+    <tag-class>curso.cap.tagsPractice.tags.ValorTag</tag-class>
     <attribute>
     	<name>campo</name>
     	<required>true</required>

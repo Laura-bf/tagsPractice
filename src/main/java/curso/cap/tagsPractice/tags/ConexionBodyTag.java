@@ -23,9 +23,9 @@ import lombok.Setter;
 @Setter
 public class ConexionBodyTag extends BodyTagSupport {
 
-	private String driver,cadena,usuario,clave;
-	private Connection conexion; //para luego poder usarla en las entiquetas hijas
-	
+	private String driver, cadena, usuario, clave;
+	private Connection conexion; // para luego poder usarla en las entiquetas hijas
+
 	@Override
 	public int doStartTag() throws JspException {
 		try {
@@ -35,14 +35,13 @@ public class ConexionBodyTag extends BodyTagSupport {
 		} catch (ClassNotFoundException | SQLException e) {
 			try {
 				conexion.close();
-				return SKIP_PAGE;
 			} catch (SQLException e1) {
-				
+
 			}
 			return SKIP_PAGE;
 		}
 	}
-	
+
 	@Override
 	public int doEndTag() throws JspException {
 		try {
@@ -52,11 +51,7 @@ public class ConexionBodyTag extends BodyTagSupport {
 		} catch (SQLException | IOException e) {
 			return SKIP_PAGE;
 		}
-		
-		
+
 	}
-	
-	
-	
-	
+
 }
